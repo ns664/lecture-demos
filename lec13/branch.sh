@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Part 1: put your name in the brackets [here]
+# Part 1: put your name in the brackets Neil
 # This will let us examine what `git diff` looks like.
 
 # Make sure that we are in a git repository.
@@ -19,5 +19,5 @@ if [[ "$?" -ne 0 ]]; then
 fi
 
 # Get the git branch
-branch="$(git branch)"
+branch="$(git branch | grep '*')"
 echo "The branch you are on: $branch"
